@@ -2,8 +2,9 @@ html {
     margin: 0;
     padding: 60px 20px 20px 20px;
     text-align: center;
-    font-family: "Atkinson Hyperlegible", serif;
+    font-family: "Noto Sans JP", serif;
     font-size: 12pt;
+    color: var(--black);
 }
 
 .wrapper {
@@ -19,6 +20,7 @@ html {
     margin: 0 auto;
     height: auto;
     width: 45%;
+    margin-bottom: 67px;
 }
 
 .pseudowrapper {
@@ -43,6 +45,7 @@ h1 .header {
     position: static;
     padding: 0;
     font-size: 65px;
+    font-weight: 900;
 }
 
 h2 {
@@ -59,7 +62,7 @@ h5 {
 
 .caption {
     font-size: 9px;
-    color: #818D98;
+    color: var(--grey);
 }
 
 .icons-row {
@@ -68,6 +71,20 @@ h5 {
     margin-top: 2rem;
 }
 
+.about {
+    width: 95%;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 26px;
+    font-family: "Atkinson Hyperlegible", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.about a {
+    color: var(--accent-color);
+    font-size: 16px;
+}
 
 .icons-row img {
     width: 6%;
@@ -99,7 +116,7 @@ h5 {
 
 a {
     font-size: larger;
-    color: #000000;
+    color: var(--black);
     text-decoration: none;
 }
 
@@ -116,7 +133,7 @@ a:hover {
 
     padding: 10px 0;
 
-    opacity: 0.6;
+    opacity: 0.5;
     filter: alpha(opacity=70);
     -webkit-transition: opacity 0.16s linear;
     -moz-transition: opacity 0.16s linear;
@@ -160,7 +177,7 @@ a:hover {
 .bio {
     font-size: 22px;
     margin-top: -1rem;
-    color: rgb(97, 95, 94);
+    color: var(--grey);
 }
 
 .menu {
@@ -170,7 +187,6 @@ a:hover {
     text-transform: uppercase;
     display: flex;
     flex-direction: row;
-    gap: 1rem;
+    gap: 2rem;
     justify-content: center;
-    /* Centers items horizontally */
 }
